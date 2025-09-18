@@ -2,9 +2,9 @@
 
 **Самостоятельно выполненный проект, занявший 1 место в Чемпионате по верстке.**
 
-Шрифт: https://www.paratype.ru/
-Дизайн, макет: https://wemakefab.ru/
-Организатор: https://htmlacademy.ru/
+1. Шрифт: https://www.paratype.ru/
+2. Дизайн, макет: https://wemakefab.ru/
+3. Организатор: https://htmlacademy.ru/
 
 <img src="source/img/readme/preview.jpg" alt="Главная страница Paratype">
 
@@ -53,6 +53,11 @@
 - Git
 - VS Code
 - Figma
+
+
+## 📌 Ссылка на проект
+
+https://anastasiya-lemeshko.github.io/paratype/
 
 
 ## 🚀 Установка и запуск:
