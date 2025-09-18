@@ -1,0 +1,34 @@
+import { moveNav } from './modules/move-nav.js';
+import { toggleBurgerMenu } from './modules/open-nav-menu.js';
+import { toggleTheme } from './modules/theme-toggle.js';
+import { initPromoSlider } from './modules/promo-slider.js';
+import { initFontSlider } from './modules/font-card-slider.js';
+import { openVisibleFontCardContent, setAccordeonToggles } from './modules/font-card-accordeon.js';
+import { setMouseListener } from './modules/font-card-hover-img.js';
+import { setContentListeners } from './modules/font-card-hover-content.js';
+import { checkSelect } from './modules/font-card-select.js';
+import { setFormValidate } from './modules/subscribe-form-validate.js';
+import { setViewControls } from './modules/best-picks-view.js';
+import { animateLink } from './modules/links-accent.js';
+import { moveSocial } from './modules/move-footer.js';
+import { setFavoritesButtons } from './modules/favorites-counter.js';
+import { addScrollButton } from './modules/button-scroll-top.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+  moveNav();
+  toggleBurgerMenu();
+  toggleTheme();
+  initPromoSlider();
+  initFontSlider();
+  openVisibleFontCardContent();
+  setAccordeonToggles();
+  setMouseListener();
+  setContentListeners();
+  checkSelect();
+  setFormValidate();
+  setViewControls();
+  animateLink();
+  moveSocial();
+  setFavoritesButtons();
+  addScrollButton();
+});

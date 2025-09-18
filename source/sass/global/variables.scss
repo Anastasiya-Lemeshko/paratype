@@ -1,0 +1,43 @@
+// Fonts
+
+$primary-font: "Pragmatica Next", "Arial", sans-serif;
+
+// Colors
+
+$color-transparent: rgba(255, 255, 255, 0);
+$color-white: #ffffff;
+$color-text-basic: #202020;
+$color-accent: #ff4b41;
+$color-accent-dark: #e9473e;
+$color-light: #f8f8f8;
+$color-grey-light: #f0f0f0;
+$color-grey-basic: #ebebeb;
+$color-grey-dark: #999999;
+$color-link-overlay: rgba($color-text-basic, 0.1);
+
+// Breakpoint
+
+$breakpoint-big-screen: 1280px;
+$breakpoint-desktop: 1023px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 320px;
+$breakpoint-gap: 0.02px;
+$max-content-width: 1600px;
+
+// Viewports
+
+$mobile-width: "(min-width: #{$breakpoint-mobile})";
+$mobile-only: "(max-width: #{$breakpoint-tablet - $breakpoint-gap})";
+$tablet-width: "(min-width: #{$breakpoint-tablet})";
+$tablet-only: "(min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - $breakpoint-gap})";
+$desktop-width: "(min-width: #{$breakpoint-desktop})";
+$big-screen-width: "(min-width: #{$breakpoint-big-screen})";
+$max-screen-width: "(min-width: #{$max-content-width})";
+
+
+// Adaptive sizes
+
+$mobile-size: 390px;
+$tablet-size: 768px;
+$narrow-side: 10px;
+$wide-side: 30px;

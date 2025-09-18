@@ -1,0 +1,80 @@
+.link-accent {
+  --transform: translate(-50%, -50%) scale(0.6);
+  --opacity: 0;
+  --color: #{$color-text-basic};
+  --bg-color: #{$color-accent};
+
+  position: relative;
+  color: var(--color);
+  opacity: 1;
+  transition: opacity 0.3s;
+
+  &::before,
+  &::after {
+    @media #{$desktop-width} {
+      box-sizing: border-box;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: var(--transform);
+      content: "";
+      width: 100%;
+      height: 100%;
+      opacity: var(--opacity);
+      transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+      z-index: -1;
+    }
+  }
+
+  &::before {
+    @media #{$desktop-width} {
+      border: 6px solid $color-transparent;
+      border-image: linear-gradient(to bottom, $color-text-basic 0%, $color-text-basic 100%);
+    }
+  }
+
+  &::after {
+    @media #{$desktop-width} {
+      background-color: var(--bg-color);
+      border-radius: 80px;
+    }
+  }
+
+  &:focus-visible,
+  &:hover {
+    --color: #{$color-accent};
+
+    outline: none;
+
+    @media #{$desktop-width} {
+      --transform: translate(-50%, -50%) scale(1);
+      --opacity: 1;
+      --color: #{$color-white};
+    }
+  }
+
+  &:active {
+    --opacity: 0.8;
+
+    opacity: 0.8;
+
+    @media #{$desktop-width} {
+      opacity: 1;
+    }
+  }
+}
+
+.link-accent--current {
+  @media #{$desktop-width} {
+    --transform: translate(-50%, -50%) scale(1);
+    --opacity: 1;
+    --color: #{$color-white};
+  }
+
+  &:focus-visible,
+  &:hover {
+    @media #{$desktop-width} {
+      --bg-color: #{$color-accent-dark};
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.tag {
+  box-sizing: border-box;
+  display: inline-block;
+  min-width: 50px;
+  padding: 7px 10px 5px;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-grey-light;
+  background-color: $color-accent;
+  border-radius: 90px;
+
+  @media #{$mobile-width} {
+    font-size: calc(12px / $mobile-size * 100vw);
+  }
+
+  @media #{$tablet-width} {
+    font-size: 12px;
+  }
+
+  @media #{$desktop-width} {
+    padding: 9px 10px 6px;
+  }
+}

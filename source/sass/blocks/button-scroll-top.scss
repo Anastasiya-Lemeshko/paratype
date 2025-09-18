@@ -1,0 +1,75 @@
+.button-scroll-top {
+  --icon-color: #{$color-text-basic};
+
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 70px;
+  right: 30px;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  background-color: $color-white;
+  border: 1px solid $color-grey-light;
+  border-radius: 50%;
+  transform: translateY(-10px);
+  transition: opacity 0.3s, transform 0.3s, visibility 0.3s, border 0.3s;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 100;
+  cursor: pointer;
+
+  @media #{$tablet-width} {
+    width: 60px;
+    height: 60px;
+  }
+
+  @media #{$max-screen-width} {
+    right: calc(50% - $max-content-width / 2 + 30px);
+    transform: translateX(50%);
+  }
+
+  &:focus-visible,
+  &:hover {
+    outline: none;
+    border: 1px solid $color-text-basic;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &:disabled {
+    --icon-color: #{$color-grey-dark};
+
+    border: 1px solid $color-grey-light;
+    background-color: $color-light;
+    opacity: 1;
+    cursor: default;
+  }
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 100%;
+    height: 100%;
+    mask-image: url("/__spritemap#sprite-arrow-up-view");
+    mask-size: 20px 20px;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    background-color: var(--icon-color);
+
+    @media #{$tablet-width} {
+      mask-size: 24px 24px;
+    }
+  }
+}
+
+
+.button-scroll-top--visible {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}

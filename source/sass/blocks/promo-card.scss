@@ -1,0 +1,141 @@
+.promo-card {
+  --img-transform: scale(1);
+  --slogan-color: #{$color-accent};
+
+  box-sizing: border-box;
+  position: relative;
+  display: grid;
+  min-height: 245px;
+  padding: 18px 20px 57px;
+  background-color: $color-grey-light;
+  color: $color-text-basic;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: opacity 0.3s;
+
+  @media #{$mobile-width} {
+    min-height: calc(300px / $mobile-size * 100vw);
+  }
+
+  @media #{$tablet-width} {
+    --offer-space: 10px;
+
+    min-height: calc(440px / $max-content-width * 100vw);
+    padding: 21px 20px 31px;
+  }
+
+  @media #{$max-screen-width} {
+    min-height: 440px;
+  }
+
+  &:focus-visible,
+  &:hover {
+    --img-transform: scale(1.2);
+    --slogan-color: #{$color-accent-dark};
+
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.promo-card--dark {
+  background-color: $color-text-basic;
+  color: $color-grey-light;
+}
+
+.promo-card__image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.promo-card img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transform: var(--img-transform);
+  transition: transform 0.5s;
+}
+
+.promo-card__content {
+  position: relative;
+  display: grid;
+  grid-template-columns: min-content 1fr 40px;
+  grid-template-rows: min-content 1fr;
+  align-items: center;
+  gap: 20px 18px;
+  z-index: 1;
+
+  @media #{$tablet-width} {
+    grid-template-columns: auto;
+    grid-template-rows: min-content 1fr min-content;
+    justify-items: start;
+  }
+}
+
+.promo-card__slogan {
+  grid-area: 2 / 1 / 3 / -1;
+  justify-self: center;
+  margin: 0;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 0.8;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--slogan-color);
+  transition: color 0.3s;
+
+  @media #{$mobile-width} {
+    font-size: calc(50px / $mobile-size * 100vw);
+  }
+
+  @media #{$tablet-width} {
+    font-size: calc(60px / $max-content-width * 100vw);
+  }
+
+  @media #{$max-screen-width} {
+    font-size: 60px;
+  }
+}
+
+.promo-card--pragmatica-next .promo-card__slogan {
+  font-weight: 750;
+  font-size: calc(70px / $mobile-size * 100vw);
+  font-variation-settings: "wdth" 10;
+  line-height: 0.75;
+
+  @media #{$tablet-width} {
+    font-size: calc(120px / $max-content-width * 100vw);
+  }
+
+  @media #{$max-screen-width} {
+    font-size: 120px;
+  }
+}
+
+.promo-card__description {
+  grid-area: 1 / 2 / 2 / 3;
+  justify-self: start;
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: inherit;
+
+  @media #{$tablet-width} {
+    grid-area: 3 / 1 / 4 / -1;
+    justify-self: center;
+  }
+}

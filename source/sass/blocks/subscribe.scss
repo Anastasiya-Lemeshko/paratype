@@ -1,0 +1,51 @@
+.subscribe__info {
+  display: none;
+
+  @media #{$tablet-width} {
+    display: block;
+    margin: 0 0 13px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    color: $color-grey-dark;
+  }
+}
+
+.subscribe__form {
+  @media #{$desktop-width} {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    gap: 20px;
+  }
+}
+
+.subscribe__group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.subscribe__input {
+  display: block;
+  margin: 0 auto 10px;
+  width: 100%;
+
+  @media #{$mobile-width} {
+    margin: 0 auto calc(10px / $mobile-size * 100vw);
+  }
+
+  @media #{$tablet-width} {
+    margin: 0 auto 10px;
+  }
+
+  @media #{$desktop-width} {
+    margin: 0;
+  }
+}
+
+.subscribe__button {
+  display: block;
+  max-width: 300px;
+  margin: 0 auto;
+}

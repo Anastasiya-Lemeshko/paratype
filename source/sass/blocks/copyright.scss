@@ -1,0 +1,57 @@
+.copyright__text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: $color-grey-dark;
+
+  @media #{$mobile-width} {
+    font-size: calc(12px / $mobile-size * 100vw);
+  }
+
+  @media #{$tablet-width} {
+    font-size: 16px;
+  }
+
+  @media #{$desktop-width} {
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    font-variation-settings: "wdth" 103;
+  }
+}
+
+.copyright__text + .copyright__text {
+  margin: 20px 0 0;
+
+  @media #{$desktop-width} {
+    margin: 0;
+  }
+}
+
+.copyright__text--name {
+  letter-spacing: 0;
+}
+
+.copyright__text--name br {
+  @media #{$desktop-width} {
+    display: none;
+  }
+}
+
+.copyright__text--link {
+  display: block;
+  text-decoration: none;
+  color: $color-grey-dark;
+  transition: color 0.3s, opacity 0.3s;
+
+  &:focus-visible,
+  &:hover {
+    outline: none;
+    color: $color-accent;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

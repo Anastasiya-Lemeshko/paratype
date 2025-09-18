@@ -1,0 +1,130 @@
+.header {
+  position: relative;
+  background-color: $color-white;
+  z-index: 20;
+}
+
+.header__top {
+  @media #{$desktop-width} {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    min-height: 60px;
+    padding: 0 10px;
+  }
+}
+
+.header__offer {
+  display: inline-block;
+  padding: 12px 10px 8px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-text-basic;
+  transition: color 0.3s, opacity 0.3s;
+
+  @media #{$desktop-width} {
+    padding: 12px 20px 8px;
+  }
+
+  &:focus-visible,
+  &:hover {
+    outline: none;
+    color: $color-accent;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.header__offer-accent {
+  margin-right: 11px;
+  color: $color-accent;
+
+  @media #{$desktop-width} {
+    margin-right: 21px;
+  }
+}
+
+.header__nav-wrapper {
+  border-top: 1px solid $color-grey-basic;
+  border-bottom: 1px solid $color-grey-basic;
+}
+
+.header__nav {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+
+  @media #{$tablet-width} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media #{$desktop-width} {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.header__logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 11px 9px 16px 10px;
+  width: 73px;
+  height: 49px;
+
+  @media #{$mobile-width} {
+    width: auto;
+    min-width: calc(60px / $mobile-size * 100vw);
+    height: calc(59px / $mobile-size * 100vw);
+  }
+
+  @media #{$tablet-width} {
+    width: auto;
+    min-width: unset;
+    height: 80px;
+    padding: 11px 24px 16px 25px;
+  }
+
+  @media #{$desktop-width} {
+    height: calc(120px / $max-content-width * 100vw);
+    padding: 15px 20px 17px 30px;
+  }
+
+  @media #{$big-screen-width} {
+    gap: 42px;
+  }
+
+  @media #{$max-screen-width} {
+    height: 120px;
+  }
+}
+
+.header__logo-text {
+  display: none;
+
+  @media #{$big-screen-width} {
+    display: block;
+    margin: 0;
+    align-self: flex-start;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+  }
+}
+
+.header__main-nav {
+  @media #{$desktop-width} {
+    flex-grow: 1;
+    flex-wrap: nowrap;
+  }
+}

@@ -1,0 +1,61 @@
+.favorites-button {
+  --icon: url("/__spritemap#sprite-heart-view");
+
+  display: block;
+  padding: 0;
+  border: none;
+  background-color: $color-text-basic;
+  width: 20px;
+  height: 20px;
+  mask-image: var(--icon);
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  z-index: 10;
+
+  @media #{$mobile-width} {
+    width: calc(20px / $mobile-size * 100vw);
+    height: calc(20px / $mobile-size * 100vw);
+  }
+
+  @media #{$tablet-width} {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media #{$desktop-width} {
+    top: 40px;
+    right: 40px;
+    width: 24px;
+    height: 24px;
+  }
+
+  &:focus-visible,
+  &:hover {
+    outline: none;
+    background-color: $color-accent;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    background-color: $color-grey-dark;
+    opacity: 1;
+    cursor: default;
+  }
+}
+
+.favorites-button--active {
+  --icon: url("/__spritemap#sprite-heart-fill-view");
+
+  background-color: $color-accent;
+
+  &:focus-visible,
+  &:hover {
+    opacity: 0.9;
+  }
+}

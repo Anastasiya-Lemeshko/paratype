@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html class="page" lang="ru" data-validate="html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Более тысячи шрифтов для любого дизайна: от рукописных до современных. Создаем фирменный стиль и предоставляем лучшие типографические решения для вашего бизнеса.">
+  <title>Paratype — дизайн-студия</title>
+  <link rel="stylesheet" href="sass/styles.scss">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/pragmatica-next_vf.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+</head>
+<body class="page__body">
+  <header class="header">
+    <div class="header__top page__centerer">
+      <a class="header__offer" href="#">
+        <span class="header__offer-accent">25% Sale</span>осенняя распродажа шрифтов
+      </a>
+    </div>
+    <div class="header__nav-wrapper">
+      <nav class="header__nav page__centerer">
+        <div class="header__logo-wrapper">
+          <a class="header__logo logo-image" href="#">
+            <picture>
+              <source width="230" height="60" type="image/svg+xml" media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" width="40" height="33" alt="Логотип дизайн-студии Paratype.">
+            </picture>
+          </a>
+          <p class="header__logo-text">Основано в&nbsp;1998</p>
+        </div>
+        <ul class="header__main-nav main-nav">
+          <li class="main-nav__burger nav-item">
+            <button class="burger" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+              <span class="main-nav__burger-icon burger__icon" aria-hidden="true"></span>
+            </button>
+          </li>
+          <li class="main-nav__menu menu">
+            <div class="menu__theme theme">
+              <button class="theme__toggle" type="button" aria-label="Включить тёмную тему." aria-pressed="false">
+                <span class="theme__label theme__label--light">
+                  <span>Дневная тема</span>
+                </span>
+                <span class="theme__label theme__label--dark">
+                  <span>Ночная тема</span>
+                </span>
+              </button>
+            </div>
+            <div class="menu__links-wrapper">
+              <ul class="menu__list menu__list--accent js-accent-list">
+                <li class="menu__item menu__item--main">
+                  <a class="menu__link link-accent link-accent--current" href="#">Главная</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link link-accent" href="#">Каталог
+                    <span class="menu__count">988</span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link menu__link--current link-accent" href="#">Коллекции
+                    <span class="menu__count">45</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="menu__list menu__list--secondary">
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Компания</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Справочник</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu__profile">
+              <p class="menu__item">Мой профиль</p>
+              <a class="menu__link menu__link--secondary" href="#">Войти</a>
+              <a class="menu__link menu__link--secondary" href="#">Зарегистрироваться</a>
+            </div>
+            <ul class="menu__sublist">
+              <li class="menu__subitem">
+                <a class="menu__link menu__link--secondary" href="#">FAQ</a>
+              </li>
+              <li class="menu__subitem">
+                <a class="menu__link menu__link--secondary" href="#">Лицензии</a>
+              </li>
+              <li class="menu__subitem">
+                <a class="menu__link menu__link--secondary" href="#">Правила продажи</a>
+              </li>
+              <li class="menu__subitem">
+                <a class="menu__link menu__link--secondary" href="#">Возврат и замена</a>
+              </li>
+              <li class="menu__subitem">
+                <a class="menu__link menu__link--secondary" href="#">Контакты</a>
+              </li>
+            </ul>
+            <ul class="menu__social social">
+              <li>
+                <a class="social__link social__link--tg" href="https://t.me/paratype_fonts">
+                  <span class="visually-hidden">Телеграм.</span>
+                </a>
+              </li>
+              <li>
+                <a class="social__link social__link--vk" href="https://vk.com/paratypefoundry">
+                  <span class="visually-hidden">Вконтакте.</span>
+                </a>
+              </li>
+            </ul>
+            <div class="menu__copyright copyright">
+              <p class="copyright__text copyright__text--name">© 1998–2022. Паратайп. <br>Все&nbsp;авторские права защищены.</p>
+              <a class="copyright__text copyright__text--link" href="https://wemakefab.ru/">Дизайн Wemakefab</a>
+            </div>
+          </li>
+          <li class="main-nav__search nav-item nav-item--search">
+            <a class="nav-item__link" href="#">
+              <span class="visually-hidden">Поиск.</span>
+            </a>
+          </li>
+          <li class="main-nav__user">
+            <ul class="user-nav">
+              <li class="nav-item nav-item--favorites">
+                <a class="nav-item__link" href="#">
+                  <span class="visually-hidden">Избранное.</span>
+                  <span class="nav-item__text favorites-counter">0</span>
+                </a>
+              </li>
+              <li class="nav-item nav-item--basket">
+                <a class="nav-item__link" href="#">
+                  <span class="visually-hidden">Корзина.</span>
+                  <span class="nav-item__text basket-counter">0</span>
+                </a>
+              </li>
+              <li class="nav-item nav-item--account">
+                <a class="nav-item__link" href="#">
+                  <span class="nav-item__text">Мой аккаунт</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main-container">
+    <h1 class="visually-hidden">Дизайн-студия Paratype.</h1>
+    <section class="promo page__centerer">
+      <h2 class="visually-hidden">Популярные предложения</h2>
+      <div class="promo__slider slider">
+        <ol class="promo__list slider__list">
+          <li class="slider__item slider-item-current">
+            <a class="promo__slide-container promo-card promo-card--dark special-offer" href="#">
+              <div class="promo-card__image-wrapper">
+                <picture>
+                  <source width="760" height="440" type="image/webp" media="(min-width: 768px)" srcset="img/promo/lines-tablet@1x.webp 1x, img/promo/lines-tablet@2x.webp 2x">
+                  <source width="370" height="300" type="image/webp" srcset="img/promo/lines-mobile@1x.webp 1x, img/promo/lines-mobile@2x.webp 2x">
+                  <source width="760" height="440" type="image/jpg" media="(min-width: 768px)" srcset="img/promo/lines-tablet@1x.jpg 1x, img/promo/lines-tablet@2x.jpg 2x">
+                  <img src="img/promo/lines-mobile@1x.jpg" srcset="img/promo/lines-mobile@2x.jpg 2x" width="370" height="300" alt="Белые линии на черном фоне.">
+                </picture>
+              </div>
+              <div class="promo-card__content">
+                <p class="font-count">280</p>
+                <h3 class="promo-card__slogan">30—50%</h3>
+                <p class="promo-card__description">Распродажа</p>
+              </div>
+              <p class="special-offer__count">45</p>
+            </a>
+          </li>
+          <li class="slider__item">
+            <a class="promo__slide-container promo-card promo-card--pragmatica-next" href="#">
+              <div class="promo-card__image-wrapper">
+                <picture>
+                  <source width="760" height="440" type="image/webp" media="(min-width: 768px)" srcset="img/promo/circles-tablet@1x.webp 1x, img/promo/circles-tablet@2x.webp 2x">
+                  <source width="370" height="300" type="image/webp" srcset="img/promo/circles-mobile@1x.webp 1x, img/promo/circles-mobile@2x.webp 2x">
+                  <source width="760" height="440" type="image/jpg" media="(min-width: 768px)" srcset="img/promo/circles-tablet@1x.jpg 1x, img/promo/circles-tablet@2x.jpg 2x">
+                  <img src="img/promo/circles-mobile@1x.jpg" srcset="img/promo/circles-mobile@2x.jpg 2x" width="370" height="300" alt="Красные круги на оранжевом фоне.">
+                </picture>
+              </div>
+              <div class="promo-card__content">
+                <p class="font-count">20</p>
+                <h3 class="promo-card__slogan">PRAGMATICA <br>NEXT</h3>
+                <p class="promo-card__description">Хиты продаж</p>
+              </div>
+            </a>
+          </li>
+        </ol>
+        <ol class="promo__pagination slider__pagination slider-pagination">
+          <li class="slider-pagination__item">
+            <button class="slider-pagination__button slider-pagination__button--current" type="button">
+              <span class="visually-hidden">Первый слайд.</span>
+            </button>
+          </li>
+          <li class="slider-pagination__item">
+            <button class="slider-pagination__button" type="button">
+              <span class="visually-hidden">Второй слайд.</span>
+            </button>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section class="catalog page__centerer">
+      <h2 class="visually-hidden">Каталог шрифтов.</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <a class="catalog__card catalog-card special-offer special-offer--small" href="#">
+            <p class="catalog-card__count font-count">340</p>
+            <div class="catalog-card__image-wrapper">
+              <img src="img/catalog/grotesques.svg" width="82" height="58" alt="Пример шрифта из группы гротески.">
+            </div>
+            <h3 class="catalog-card__title">Гротески</h3>
+            <p class="special-offer__count">6</p>
+          </a>
+        </li>
+        <li class="catalog__item">
+          <a class="catalog__card catalog-card" href="#">
+            <p class="catalog-card__count font-count">89</p>
+            <div class="catalog-card__image-wrapper">
+              <img src="img/catalog/antiques.svg" width="82" height="58" alt="Пример шрифта из группы антиквы.">
+            </div>
+            <h3 class="catalog-card__title">Антиквы</h3>
+          </a>
+        </li>
+        <li class="catalog__item">
+          <a class="catalog__card catalog-card special-offer special-offer--small" href="#">
+            <p class="catalog-card__count font-count">129</p>
+            <div class="catalog-card__image-wrapper">
+              <img src="img/catalog/block.svg" width="82" height="58" alt="Пример шрифта из группы брусковые.">
+            </div>
+            <h3 class="catalog-card__title">Брусковые</h3>
+            <p class="special-offer__count">2</p>
+          </a>
+        </li>
+        <li class="catalog__item">
+          <a class="catalog__card catalog-card" href="#">
+            <p class="catalog-card__count font-count">278</p>
+            <div class="catalog-card__image-wrapper">
+              <img src="img/catalog/accidental.svg" width="82" height="58" alt="Пример шрифта из группы акцидентные.">
+            </div>
+            <h3 class="catalog-card__title">Акцидентные</h3>
+          </a>
+        </li>
+        <li class="catalog__item">
+          <a class="catalog__card catalog-card" href="#">
+            <p class="catalog-card__count font-count">23</p>
+            <div class="catalog-card__image-wrapper">
+              <img src="img/catalog/handwritten.svg" width="82" height="58" alt="Пример шрифта из группы рукописные.">
+            </div>
+            <h3 class="catalog-card__title">Рукописные</h3>
+          </a>
+        </li>
+        <li class="catalog__item">
+          <a class="catalog__card catalog-card" href="#">
+            <p class="catalog-card__count font-count">8</p>
+            <div class="catalog-card__image-wrapper">
+              <img src="img/catalog/non-alphabetic.svg" width="82" height="58" alt="Пример шрифта из группы неалфавитные.">
+            </div>
+            <h3 class="catalog-card__title">Неалфавитные</h3>
+          </a>
+        </li>
+        <li class="catalog__item">
+          <a class="catalog__card catalog-card" href="#">
+            <p class="catalog-card__count font-count">280</p>
+            <div class="catalog-card__image-wrapper">
+              <img src="img/catalog/monospaced.svg" width="82" height="58" alt="Пример шрифта из группы моноширинные.">
+            </div>
+            <h3 class="catalog-card__title">Моноширинные</h3>
+          </a>
+        </li>
+        <li class="catalog__item">
+          <a class="catalog__card catalog-card" href="#">
+            <p class="catalog-card__count font-count">56</p>
+            <div class="catalog-card__image-wrapper">
+              <img src="img/catalog/historical.svg" width="82" height="58" alt="Пример шрифта из группы исторические.">
+            </div>
+            <h3 class="catalog-card__title">Исторические</h3>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="best-picks page__centerer">
+      <h2 class="visually-hidden">Лучшие предложения.</h2>
+      <div class="best-picks__controls">
+        <div class="best-picks__filter select">
+          <button class="best-picks__select-button select__button" type="button" aria-label="Открыть список категорий.">
+            <span class="visually-hidden">Выбрать категорию.</span>
+          </button>
+          <ul class="best-picks__filter-list select__list js-accent-list">
+            <li class="best-picks__filter-item">
+              <button class="best-picks__filter-button link-accent link-accent--current" type="button" data-value="news">Все новинки</button>
+            </li>
+            <li class="best-picks__filter-item">
+              <button class="best-picks__filter-button link-accent" type="button" data-value="sale">Распродажа</button>
+            </li>
+            <li class="best-picks__filter-item">
+              <button class="best-picks__filter-button link-accent" type="button" data-value="recommend">Рекомендуем</button>
+            </li>
+            <li class="best-picks__filter-item">
+              <button class="best-picks__filter-button link-accent" type="button" data-value="hit">Бестселлеры</button>
+            </li>
+          </ul>
+        </div>
+        <div class="best-picks__view">
+          <button class="best-picks__view-button best-picks__view-button--cards best-picks__view-button--active" type="button">
+            <span class="visually-hidden">Включить отображение карточками.</span>
+          </button>
+          <button class="best-picks__view-button best-picks__view-button--list" type="button">
+            <span class="visually-hidden">Включить отображение списком.</span>
+          </button>
+        </div>
+      </div>
+      <ul class="best-picks__list">
+        <li class="best-picks__item best-picks__item--big">
+          <div class="best-picks__card font-card font-card--big font-card--first">
+            <div class="font-card__content-wrapper">
+              <a class="font-card__content" href="#">
+                <p class="font-card__status">Распродажа
+                  <span class="font-card__status-accent">30%</span>
+                </p>
+                <h3 class="font-card__title">Pragmatica <br>Next VF</h3>
+                <div class="font-card__details">
+                  <div class="font-card__description">
+                    <p class="font-card__format">Opentype</p>
+                    <dl class="font-card__spec">
+                      <dt>Начертаний</dt>
+                      <dd>8</dd>
+                    </dl>
+                    <dl class="font-card__spec">
+                      <dt>Языки</dt>
+                      <dd>92</dd>
+                    </dl>
+                    <p class="font-card__type">Гротеск</p>
+                  </div>
+                  <p class="font-card__price">
+                    <span class="font-card__price-text">От</span>
+                    <span class="font-card__price-value">2 250 ₽</span>
+                  </p>
+                  <div class="font-card__tags">
+                    <p class="font-card__tags-title">Теги</p>
+                    <ul class="font-card__tags-list">
+                      <li class="tag">Десктоп</li>
+                      <li class="tag">Веб</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+              <button class="font-card__favorites favorites-button" type="button">
+                <span class="visually-hidden">Добавить шрифт в избранное.</span>
+              </button>
+              <button class="font-card__button-open button-accordeon" type="button">
+                <span class="visually-hidden">Открыть подробное описание.</span>
+              </button>
+            </div>
+            <div class="font-card__slider slider">
+              <ol class="font-card__list slider__list">
+                <li class="font-card__item slider__item slider-item-current">
+                  <a class="font-card__image-wrapper" href="#">
+                    <picture>
+                      <source width="1580" height="800" type="image/webp" media="(min-width: 768px)" srcset="img/fonts/pragmatica-next-1-tablet@1x.webp 1x, img/fonts/pragmatica-next-1-tablet@2x.webp 2x">
+                      <source width="370" height="300" type="image/webp" srcset="img/fonts/pragmatica-next-1-mobile@1x.webp 1x, img/fonts/pragmatica-next-1-mobile@2x.webp 2x">
+                      <source width="1580" height="800" type="image/jpg" media="(min-width: 768px)" srcset="img/fonts/pragmatica-next-1-tablet@1x.jpg 1x, img/fonts/pragmatica-next-1-tablet@2x.jpg 2x">
+                      <img src="img/fonts/pragmatica-next-1-mobile@1x.jpg" srcset="img/fonts/pragmatica-next-1-mobile@2x.jpg 2x" width="370" height="300" alt="Пример шрифта Прагматика Некст на трех флажках.">
+                    </picture>
+                  </a>
+                </li>
+                <li class="font-card__item slider__item">
+                  <a class="font-card__image-wrapper" href="#">
+                    <picture>
+                      <source width="1580" height="800" type="image/webp" media="(min-width: 768px)" srcset="img/fonts/pragmatica-next-2-tablet@1x.webp 1x, img/fonts/pragmatica-next-2-tablet@2x.webp 2x">
+                      <source width="370" height="300" type="image/webp" srcset="img/fonts/pragmatica-next-2-mobile@1x.webp 1x, img/fonts/pragmatica-next-2-mobile@2x.webp 2x">
+                      <source width="1580" height="800" type="image/jpg" media="(min-width: 768px)" srcset="img/fonts/pragmatica-next-2-tablet@1x.jpg 1x, img/fonts/pragmatica-next-2-tablet@2x.jpg 2x">
+                      <img src="img/fonts/pragmatica-next-2-mobile@1x.jpg" srcset="img/fonts/pragmatica-next-2-mobile@2x.jpg 2x" width="370" height="300" alt="Страницы на черном фоне.">
+                    </picture>
+                  </a>
+                </li>
+                <li class="font-card__item slider__item">
+                  <a class="font-card__image-wrapper" href="#">
+                    <picture>
+                      <source width="1580" height="800" type="image/webp" media="(min-width: 768px)" srcset="img/fonts/pragmatica-next-3-tablet@1x.webp 1x, img/fonts/pragmatica-next-3-tablet@2x.webp 2x">
+                      <source width="370" height="300" type="image/webp" srcset="img/fonts/pragmatica-next-3-mobile@1x.webp 1x, img/fonts/pragmatica-next-3-mobile@2x.webp 2x">
+                      <source width="1580" height="800" type="image/jpg" media="(min-width: 768px)" srcset="img/fonts/pragmatica-next-3-tablet@1x.jpg 1x, img/fonts/pragmatica-next-3-tablet@2x.jpg 2x">
+                      <img src="img/fonts/pragmatica-next-3-mobile@1x.jpg" srcset="img/fonts/pragmatica-next-3-mobile@2x.jpg 2x" width="370" height="300" alt="Черный шрифт на красном фоне.">
+                    </picture>
+                  </a>
+                </li>
+              </ol>
+              <ol class="font-card__pagination slider__pagination slider-pagination">
+                <li class="slider-pagination__item">
+                  <button class="slider-pagination__button slider-pagination__button--current" type="button">
+                    <span class="visually-hidden">Первый слайд.</span>
+                  </button>
+                </li>
+                <li class="slider-pagination__item">
+                  <button class="slider-pagination__button" type="button">
+                    <span class="visually-hidden">Второй слайд.</span>
+                  </button>
+                </li>
+                <li class="slider-pagination__item">
+                  <button class="slider-pagination__button" type="button">
+                    <span class="visually-hidden">Третий слайд.</span>
+                  </button>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </li>
+        <li class="best-picks__item">
+          <div class="best-picks__card font-card font-card--first">
+            <div class="font-card__content-wrapper">
+              <a class="font-card__content" href="#">
+                <p class="font-card__status">Бестселлер</p>
+                <h3 class="font-card__title">Proxima Nova</h3>
+                <div class="font-card__details">
+                  <div class="font-card__description">
+                    <p class="font-card__format">Opentype</p>
+                    <dl class="font-card__spec">
+                      <dt>Начертаний</dt>
+                      <dd>8</dd>
+                    </dl>
+                    <dl class="font-card__spec">
+                      <dt>Языки</dt>
+                      <dd>92</dd>
+                    </dl>
+                    <p class="font-card__type">Гротеск</p>
+                  </div>
+                  <p class="font-card__price">
+                    <span class="font-card__price-text">От</span>
+                    <span class="font-card__price-value">2 250 ₽</span>
+                  </p>
+                  <div class="font-card__tags">
+                    <p class="font-card__tags-title">Теги</p>
+                    <ul class="font-card__tags-list">
+                      <li class="tag">Десктоп</li>
+                      <li class="tag">Веб</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+              <button class="font-card__favorites favorites-button" type="button">
+                <span class="visually-hidden">Добавить шрифт в избранное.</span>
+              </button>
+              <button class="font-card__button-open button-accordeon" type="button">
+                <span class="visually-hidden">Открыть подробное описание.</span>
+              </button>
+            </div>
+            <div class="font-card__slider slider">
+              <ol class="font-card__list slider__list">
+                <li class="font-card__item slider__item slider-item-current">
+                  <a class="font-card__image-wrapper" href="#">
+                    <picture>
+                      <source width="1580" height="800" type="image/webp" media="(min-width: 768px)" srcset="img/fonts/proxima-nova-1-tablet@1x.webp 1x, img/fonts/proxima-nova-1-tablet@2x.webp 2x">
+                      <source width="370" height="300" type="image/webp" srcset="img/fonts/proxima-nova-1-mobile@1x.webp 1x, img/fonts/proxima-nova-1-mobile@2x.webp 2x">
+                      <source width="1580" height="800" type="image/jpg" media="(min-width: 768px)" srcset="img/fonts/proxima-nova-1-tablet@1x.jpg 1x, img/fonts/proxima-nova-1-tablet@2x.jpg 2x">
+                      <img src="img/fonts/proxima-nova-1-mobile@1x.jpg" srcset="img/fonts/proxima-nova-1-mobile@2x.jpg 2x" width="370" height="300" alt="Шрифт Проксима Нова в газете.">
+                    </picture>
+                  </a>
+                </li>
+                <li class="font-card__item slider__item">
+                  <a class="font-card__image-wrapper" href="#">
+                    <picture>
+                      <source width="1580" height="800" type="image/webp" media="(min-width: 768px)" srcset="img/fonts/proxima-nova-2-tablet@1x.webp 1x, img/fonts/proxima-nova-2-tablet@2x.webp 2x">
+                      <source width="370" height="300" type="image/webp" srcset="img/fonts/proxima-nova-2-mobile@1x.webp 1x, img/fonts/proxima-nova-2-mobile@2x.webp 2x">
+                      <source width="1580" height="800" type="image/jpg" media="(min-width: 768px)" srcset="img/fonts/proxima-nova-2-tablet@1x.jpg 1x, img/fonts/proxima-nova-2-tablet@2x.jpg 2x">
+                      <img src="img/fonts/proxima-nova-2-mobile@1x.jpg" srcset="img/fonts/proxima-nova-2-mobile@2x.jpg 2x" width="370" height="300" alt="Пример шрифта Проксима Нова на белой странице.">
+                    </picture>
+                  </a>
+                </li>
+                <li class="font-card__item slider__item">
+                  <a class="font-card__image-wrapper" href="#">
+                    <picture>
+                      <source width="1580" height="800" type="image/webp" media="(min-width: 768px)" srcset="img/fonts/proxima-nova-3-tablet@1x.webp 1x, img/fonts/proxima-nova-3-tablet@2x.webp 2x">
+                      <source width="370" height="300" type="image/webp" srcset="img/fonts/proxima-nova-3-mobile@1x.webp 1x, img/fonts/proxima-nova-3-mobile@2x.webp 2x">
+                      <source width="1580" height="800" type="image/jpg" media="(min-width: 768px)" srcset="img/fonts/proxima-nova-3-tablet@1x.jpg 1x, img/fonts/proxima-nova-3-tablet@2x.jpg 2x">
+                      <img src="img/fonts/proxima-nova-3-mobile@1x.jpg" srcset="img/fonts/proxima-nova-3-mobile@2x.jpg 2x" width="370" height="300" alt="Пример шрифта Проксима Нова в темном варианте.">
+                    </picture>
+                  </a>
+                </li>
+              </ol>
+              <ol class="font-card__pagination slider__pagination slider-pagination">
+                <li class="slider-pagination__item">
+                  <button class="slider-pagination__button slider-pagination__button--current" type="button">
+                    <span class="visually-hidden">Первый слайд.</span>
+                  </button>
+                </li>
+                <li class="slider-pagination__item">
+                  <button class="slider-pagination__button" type="button">
+                    <span class="visually-hidden">Второй слайд.</span>
+                  </button>
+                </li>
+                <li class="slider-pagination__item">
+                  <button class="slider-pagination__button" type="button">
+                    <span class="visually-hidden">Третий слайд.</span>
+                  </button>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </li>
+        <li class="best-picks__item">
+          <div class="best-picks__card font-card font-card--first font-card--magistral">
+            <div class="font-card__content-wrapper">
+              <a class="font-card__content" href="#">
+                <p class="font-card__status">Рекомендуем</p>
+                <h3 class="font-card__title">Magistral <br>PT</h3>
+                <div class="font-card__details font-card__details--opened">
+                  <div class="font-card__description">
+                    <p class="font-card__format">Opentype</p>
+                    <dl class="font-card__spec">
+                      <dt>Начертаний</dt>
+                      <dd>8</dd>
+                    </dl>
+                    <dl class="font-card__spec">
+                      <dt>Языки</dt>
+                      <dd>92</dd>
+                    </dl>
+                    <p class="font-card__type">Гротеск</p>
+                  </div>
+                  <p class="font-card__price">
+                    <span class="font-card__price-text">От</span>
+                    <span class="font-card__price-value">2 250 ₽</span>
+                  </p>
+                  <div class="font-card__tags">
+                    <p class="font-card__tags-title">Теги</p>
+                    <ul class="font-card__tags-list">
+                      <li class="tag">Десктоп</li>
+                      <li class="tag">Веб</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+              <button class="font-card__favorites favorites-button" type="button">
+                <span class="visually-hidden">Добавить шрифт в избранное.</span>
+              </button>
+              <button class="font-card__button-open button-accordeon button-accordeon--active" type="button">
+                <span class="visually-hidden">Открыть подробное описание.</span>
+              </button>
+            </div>
+            <div class="font-card__slider slider">
+              <ol class="font-card__list slider__list">
+                <li class="font-card__item slider__item slider-item-current">
+                  <a class="font-card__image-wrapper" href="#">
+                    <picture>
+                      <source width="1580" height="800" type="image/webp" media="(min-width: 768px)" srcset="img/fonts/magistral-pt-1-tablet@1x.webp 1x, img/fonts/magistral-pt-1-tablet@2x.webp 2x">
+                      <source width="370" height="300" type="image/webp" srcset="img/fonts/magistral-pt-1-mobile@1x.webp 1x, img/fonts/magistral-pt-1-mobile@2x.webp 2x">
+                      <source width="1580" height="800" type="image/jpg" media="(min-width: 768px)" srcset="img/fonts/magistral-pt-1-tablet@1x.jpg 1x, img/fonts/magistral-pt-1-tablet@2x.jpg 2x">
+                      <img src="img/fonts/magistral-pt-1-mobile@1x.jpg" srcset="img/fonts/magistral-pt-1-mobile@2x.jpg 2x" width="370" height="300" alt="Стопки синих книг.">
+                    </picture>
+                  </a>
+                </li>
+                <li class="font-card__item slider__item">
+                  <a class="font-card__image-wrapper" href="#">
+                    <picture>
+                      <source width="1580" height="800" type="image/webp" media="(min-width: 768px)" srcset="img/fonts/magistral-pt-2-tablet@1x.webp 1x, img/fonts/magistral-pt-2-tablet@2x.webp 2x">
+                      <source width="370" height="300" type="image/webp" srcset="img/fonts/magistral-pt-2-mobile@1x.webp 1x, img/fonts/magistral-pt-2-mobile@2x.webp 2x">
+                      <source width="1580" height="800" type="image/jpg" media="(min-width: 768px)" srcset="img/fonts/magistral-pt-2-tablet@1x.jpg 1x, img/fonts/magistral-pt-2-tablet@2x.jpg 2x">
+                      <img src="img/fonts/magistral-pt-2-mobile@1x.jpg" srcset="img/fonts/magistral-pt-2-mobile@2x.jpg 2x" width="370" height="300" alt="Разноцветные таблички.">
+                    </picture>
+                  </a>
+                </li>
+                <li class="font-card__item slider__item">
+                  <a class="font-card__image-wrapper" href="#">
+                    <picture>
+                      <source width="1580" height="800" type="image/webp" media="(min-width: 768px)" srcset="img/fonts/magistral-pt-3-tablet@1x.webp 1x, img/fonts/magistral-pt-3-tablet@2x.webp 2x">
+                      <source width="370" height="300" type="image/webp" srcset="img/fonts/magistral-pt-3-mobile@1x.webp 1x, img/fonts/magistral-pt-3-mobile@2x.webp 2x">
+                      <source width="1580" height="800" type="image/jpg" media="(min-width: 768px)" srcset="img/fonts/magistral-pt-3-tablet@1x.jpg 1x, img/fonts/magistral-pt-3-tablet@2x.jpg 2x">
+                      <img src="img/fonts/magistral-pt-3-mobile@1x.jpg" srcset="img/fonts/magistral-pt-3-mobile@2x.jpg 2x" width="370" height="300" alt="Пример шрифта на красном фоне.">
+                    </picture>
+                  </a>
+                </li>
+              </ol>
+              <ol class="font-card__pagination slider__pagination slider-pagination">
+                <li class="slider-pagination__item">
+                  <button class="slider-pagination__button slider-pagination__button--current" type="button">
+                    <span class="visually-hidden">Первый слайд.</span>
+                  </button>
+                </li>
+                <li class="slider-pagination__item">
+                  <button class="slider-pagination__button" type="button">
+                    <span class="visually-hidden">Второй слайд.</span>
+                  </button>
+                </li>
+                <li class="slider-pagination__item">
+                  <button class="slider-pagination__button" type="button">
+                    <span class="visually-hidden">Третий слайд.</span>
+                  </button>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="catalog page__centerer">
+      <h2 class="visually-hidden">Каталог шрифтов.</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <a class="catalog__card catalog-card special-offer special-offer--small" href="#">
+            <p class="catalog-card__count font-count">340</p>
+            <div class="catalog-card__image-wrapper">
+              <img src="img/catalog/grotesques.svg" width="82" height="58" alt="Пример шрифта из группы гротески.">
+            </div>
+            <h3 class="catalog-card__title">Гротески</h3>
+            <p class="special-offer__count">6</p>
+          </a>
+        </li>
+        <li class="catalog__item">
+          <a class="catalog__card catalog-card" href="#">
+            <p class="catalog-card__count font-count">89</p>
+            <div class="catalog-card__image-wrapper">
+              <img src="img/catalog/antiques.svg" width="82" height="58" alt="Пример шрифта из группы антиквы.">
+            </div>
+            <h3 class="catalog-card__title">Антиквы</h3>
+          </a>
+        </li>
+        <li class="catalog__item">
+          <a class="catalog__card catalog-card special-offer special-offer--small" href="#">
+            <p class="catalog-card__count font-count">129</p>
+            <div class="catalog-card__image-wrapper">
+              <img src="img/catalog/block.svg" width="82" height="58" alt="Пример шрифта из группы брусковые.">
+            </div>
+            <h3 class="catalog-card__title">Брусковые</h3>
+            <p class="special-offer__count">2</p>
+          </a>
+        </li>
+        <li class="catalog__item">
+          <a class="catalog__card catalog-card" href="#">
+            <p class="catalog-card__count font-count">278</p>
+            <div class="catalog-card__image-wrapper">
+              <img src="img/catalog/accidental.svg" width="82" height="58" alt="Пример шрифта из группы акцидентные.">
+            </div>
+            <h3 class="catalog-card__title">Акцидентные</h3>
+          </a>
+        </li>
+        <li class="catalog__item">
+          <a class="catalog__card catalog-card" href="#">
+            <p class="catalog-card__count font-count">23</p>
+            <div class="catalog-card__image-wrapper">
+              <img src="img/catalog/handwritten.svg" width="82" height="58" alt="Пример шрифта из группы рукописные.">
+            </div>
+            <h3 class="catalog-card__title">Рукописные</h3>
+          </a>
+        </li>
+        <li class="catalog__item">
+          <a class="catalog__card catalog-card" href="#">
+            <p class="catalog-card__count font-count">8</p>
+            <div class="catalog-card__image-wrapper">
+              <img src="img/catalog/non-alphabetic.svg" width="82" height="58" alt="Пример шрифта из группы неалфавитные.">
+            </div>
+            <h3 class="catalog-card__title">Неалфавитные</h3>
+          </a>
+        </li>
+        <li class="catalog__item">
+          <a class="catalog__card catalog-card" href="#">
+            <p class="catalog-card__count font-count">280</p>
+            <div class="catalog-card__image-wrapper">
+              <img src="img/catalog/monospaced.svg" width="82" height="58" alt="Пример шрифта из группы моноширинные.">
+            </div>
+            <h3 class="catalog-card__title">Моноширинные</h3>
+          </a>
+        </li>
+        <li class="catalog__item">
+          <a class="catalog__card catalog-card" href="#">
+            <p class="catalog-card__count font-count">56</p>
+            <div class="catalog-card__image-wrapper">
+              <img src="img/catalog/historical.svg" width="82" height="58" alt="Пример шрифта из группы исторические.">
+            </div>
+            <h3 class="catalog-card__title">Исторические</h3>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper page__centerer">
+      <div class="footer__nav footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">FAQ</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Лицензии</a>
+          </li>
+          <li class="footer-nav__item footer-nav__item--additional">
+            <a class="footer-nav__link" href="#">Правила продажи</a>
+          </li>
+          <li class="footer-nav__item footer-nav__item--additional">
+            <a class="footer-nav__link" href="#">Возврат и замена</a>
+          </li>
+        </ul>
+        <div class="footer-nav__contacts">
+          <a class="footer-nav__link" href="#">Контакты</a>
+        </div>
+      </div>
+      <section class="footer__subscribe subscribe">
+        <h2 class="visually-hidden">Подписаться на рассылку новостей.</h2>
+        <p class="subscribe__info">Новости Paratype</p>
+        <form class="subscribe__form" action="http://echo.htmlacademy.ru/" method="post" novalidate>
+          <fieldset class="subscribe__group">
+            <legend class="visually-hidden">Контактные данные.</legend>
+            <label class="visually-hidden" for="email">Email</label>
+            <input class="subscribe__input input" type="email" name="email" id="email" placeholder="Ваш Email" required>
+          </fieldset>
+          <button class="subscribe__button button" type="submit">Подписаться</button>
+        </form>
+      </section>
+      <div class="footer__info">
+        <ul class="footer__social social">
+          <li>
+            <a class="social__link social__link--tg" href="https://t.me/paratype_fonts">
+              <span class="visually-hidden">Телеграм.</span>
+            </a>
+          </li>
+          <li>
+            <a class="social__link social__link--vk" href="https://vk.com/paratypefoundry">
+              <span class="visually-hidden">Вконтакте.</span>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__copyright copyright">
+          <p class="copyright__text copyright__text--name">© 1998–2022. Паратайп. <br>Все&nbsp;авторские права защищены.</p>
+          <a class="copyright__text copyright__text--link" href="https://wemakefab.ru/">Дизайн Wemakefab</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button class="button-scroll-top" type="button">
+    <span class="visually-hidden">Прокрутить к началу страницы.</span>
+  </button>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

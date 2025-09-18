@@ -1,0 +1,53 @@
+.input {
+  box-sizing: border-box;
+  padding: 16px 19px;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $color-text-basic;
+  background-color: $color-grey-light;
+  border: 1px solid $color-grey-light;
+  border-radius: 10px;
+  transition: border 0.3s;
+  cursor: pointer;
+
+  @media #{$mobile-width} {
+    min-height: calc(50px / $mobile-size * 100vw);
+    font-size: calc(14px / $mobile-size * 100vw);
+  }
+
+  @media #{$tablet-width} {
+    min-height: unset;
+    padding: 21px 18px;
+    font-size: 14px;
+  }
+
+  &:focus-visible,
+  &:hover {
+    outline: none;
+    border: 1px solid $color-grey-dark;
+  }
+
+  &:disabled {
+    color: $color-grey-dark;
+    border: 1px solid rgba($color-light, 0.6);
+    background-color: rgba($color-light, 0.6);
+    pointer-events: none;
+    cursor: default;
+  }
+
+  &::placeholder {
+    color: $color-grey-dark;
+  }
+}
+
+.input--error {
+  border: 1px solid $color-accent;
+
+  &:focus-visible,
+  &:hover,
+  &:disabled {
+    border: 1px solid $color-accent;
+  }
+}

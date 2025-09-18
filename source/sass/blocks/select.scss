@@ -1,0 +1,98 @@
+.select {
+  --color: #{$color-text-basic};
+}
+
+.select__button {
+  display: grid;
+  grid-template-columns: 1fr 6px;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 21px 15px 19px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--color);
+  border: none;
+  background-color: $color-white;
+  opacity: 1;
+  transition: color 0.3s, opacity 0.3s;
+  cursor: pointer;
+
+  @media #{$mobile-width} {
+    grid-template-columns: 1fr calc(6px / $mobile-size * 100vw);
+    font-size: calc(12px / $mobile-size * 100vw);
+  }
+
+  @media #{$tablet-width} {
+    grid-template-columns: 1fr 6px;
+    font-size: 12px;
+  }
+
+  &:focus-visible,
+  &:hover {
+    --color: #{$color-accent};
+
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    --color: #{$color-grey-dark};
+
+    background-color: $color-light;
+    pointer-events: none;
+    cursor: default;
+  }
+}
+
+.select__button::after {
+  grid-area: 1 / 2 / 2 / 3;
+  content: "";
+  border: 5px solid transparent;
+  border-top: 5px solid var(--color);
+  transform: scaleY(1);
+  transform-origin: center;
+  transition: transform 0.3s, border 0.3s;
+
+  @media #{$mobile-width} {
+    border: calc(5px / $mobile-size * 100vw) solid transparent;
+    border-top: calc(5px / $mobile-size * 100vw) solid var(--color);
+  }
+
+  @media #{$tablet-width} {
+    border: 5px solid transparent;
+    border-top: 5px solid var(--color);
+  }
+}
+
+.select--open .select__button::after {
+  transform: scaleY(-1) translateY(4px);
+}
+
+.select__list {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  width: 100%;
+  max-height: 260px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border-radius: 10px;
+  background-color: $color-grey-basic;
+  transform: scaleY(0);
+  opacity: 0.7;
+  transform-origin: top;
+  transition: transform 0.3s, opacity 0.3s;
+  z-index: 50;
+}
+
+.select--open .select__list {
+  transform: scaleY(1);
+  opacity: 1;
+}

@@ -1,0 +1,33 @@
+.promo {
+  padding: 20px $narrow-side;
+
+  @media #{$tablet-width} {
+    padding: 18px $wide-side 20px;
+  }
+}
+
+.promo__list {
+  @media #{$tablet-width} {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: calc(20px / $max-content-width * 100vw);
+  }
+
+  @media #{$max-screen-width} {
+    gap: 20px;
+  }
+}
+
+.promo__slide-container {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.promo__pagination {
+  @media #{$tablet-width} {
+    display: none;
+  }
+}

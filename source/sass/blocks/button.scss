@@ -1,0 +1,46 @@
+.button {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 17px 25px 14px;
+  font-family: $primary-font;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $color-white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 90px;
+  border: none;
+  background-color: $color-accent;
+  cursor: pointer;
+  transition: opacity 0.3s, background-color 0.3s;
+  z-index: 1;
+
+  @media #{$mobile-width} {
+    padding: calc(17px / $mobile-size * 100vw) calc(25px / $mobile-size * 100vw) calc(14px / $mobile-size * 100vw);
+    font-size: calc(14px / $mobile-size * 100vw);
+  }
+
+  @media #{$tablet-width} {
+    padding: 22px 33px 19px;
+    font-size: 14px;
+  }
+
+  &:focus-visible,
+  &:hover {
+    outline: none;
+    background-color: $color-accent-dark;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &:disabled {
+    color: $color-grey-dark;
+    background-color: $color-grey-basic;
+    pointer-events: none;
+    cursor: default;
+  }
+}
